@@ -4,7 +4,7 @@ SELECT
     T1.municipality_code AS municipality_code,
     T1.municipality_name AS municipality
 FROM geo.municipalities AS T1
-WHERE T1.municipality_name LIKE '%Pamplona%'
+WHERE T1.municipality_name ILIKE '%Pamplona%'
 ORDER BY T1.municipality_name ASC;
 
 /*
