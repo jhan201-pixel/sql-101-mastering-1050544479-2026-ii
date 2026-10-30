@@ -55,3 +55,10 @@ WHERE T1.settled_at >= '2026-09-30'
  STL-20260930-000009 | DLV-20260929-000296 |         76.15 |     22169.00 |           0.00 | 1688169.35 |      1688169.35
  STL-20260930-000050 | DLV-20260930-000037 |         63.66 |     21964.00 |           0.00 | 1398228.24 |      1398228.24
 */
+
+-- Explicación:
+-- Los valores coinciden porque ambos utilizan la misma operación
+-- multiplicar el peso neto por el precio aplicado por kilogramo
+-- gross_amount es generado automáticamente por PostgreSQL
+-- mientras que check gross cop se calcula directamente en la consulta SQL
+-- Ambos valores coinciden porque utilizan los mismos datos y la misma operación matemática
